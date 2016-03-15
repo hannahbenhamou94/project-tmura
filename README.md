@@ -1,6 +1,6 @@
 # tmura_girls
 הדרך לתואר בטוהר
-לוגן-https://github.com/hannahbenhamou94/project-tmura/wiki/Inception
+לוגן-[]!https://github.com/hannahbenhamou94/project-tmura/wiki/Inception
 קישור להפצה נוכחית של המוצר
 צאט-https://gitter.im/hannahbenhamou94/project-tmura
 קישור למערכת ניהול המשימות -http://jce-il.github.io/se-class16b/
