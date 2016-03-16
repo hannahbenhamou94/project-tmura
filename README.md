@@ -1,6 +1,8 @@
 # tmura_girls
 הדרך לתואר בטוהר
 לוגן-[]!https://drive.google.com/open?id=0B5FhfrJjOH5ydGNydUswWE5wdVk
+https://github.com/hannahbenhamou94/project-tmura/blob/master/%D7%9C%D7%95%D7%92%D7%95.jpg
+
 קישור להפצה נוכחית של המוצר
 צאט-https://gitter.im/hannahbenhamou94/project-tmura
 קישור למערכת ניהול המשימות -http://jce-il.github.io/se-class16b/
