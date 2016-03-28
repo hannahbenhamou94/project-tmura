@@ -7,8 +7,10 @@
 
 ## Please visit our [live application](https://demo.reactstarterkit.com/)
  
+##Chat:
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hannahbenhamou94/project-tmura)
+
  
-[![Join the chat at https://gitter.im/hannahbenhamou94/project-tmura](https://gitter.im/hannahbenhamou94/project-tmura.svg)](https://gitter.im/hannahbenhamou94/project-tmura?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
 ## [Issue Board](https://github.com/hannahbenhamou94/project-tmura#/)
 
