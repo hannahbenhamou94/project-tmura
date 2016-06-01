@@ -1,0 +1,56 @@
+body {
+    background-image: url("../picture/galery/background.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header {
+    display: inline-flex;
+    margin-bottom: 10%;
+}
+#header1, #header2 {
+   width:50%;
+   height:15%;
+}
+#header2 {
+    margin-left: -25px;
+}
+#logo {
+    width: 45%;
+    position: absolute;
+    left: 30%;
+    top: 220px;
+}
+#menu {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 370px;
+}
+.center {
+     margin: 5%;
+}
+.center td a img {
+    height: 200px;
+    width: 200px;  
+}
+.center .add_pic a img {
+    width: 300px;  
+}
+
+.center .albums a img {
+    height: 200px;
+    width: 300px;  
+}
+.center .viewpic img {
+    width: 310%;
+    height: 28%;
+
+}
+
+#footer {
+    height: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

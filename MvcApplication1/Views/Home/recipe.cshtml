@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "recipe";
+}
+
+<h2>recipe</h2>
+<div>חיפוש מתכון:</div>
+<input type="text" name="namerecipe"/>
+
+<div>רשימת מתכונים</div>
+@Html.ActionLink("עוגת שוקולד","chock")
+<br />
+@Html.ActionLink("עוגת גבינה","gvina")
+<br />
+@Html.ActionLink("עוגת שכבות","shcavot")
+<br />
+
+<form action="/Home/recipe" method="post">
+    <input type="submit" value="העלאת מתכון"  id="nrecipe"/>
+</form>  
+
+<form action="/Home/index" method="post">
+    <input type="submit" value="חזרה לדף הבית"  id="back"/>
+</form>   

@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "home";
+}
+<header hidden="20%" >
+    <img  src="~/Web.config"/>
+</header>
+
+<form action="/Home/galery" method="post">
+    <input type="submit" value="גלריה"  id="galery"/>
+</form>
+
+<form action="/Home/lessons" method="post">
+    <input type="submit" value="הרצאות ושיעורי קודש"  id="lessons"/>
+</form>
+
+<form action="/Home/test" method="post">
+    <input type="submit" value="סיכומים ומבחנים"  id="test"/>
+</form>
+
+<form action="/Home/site" method="post">
+    <input type="submit" value="אתרי תכנות שימושיים"  id="site"/>
+</form>
+
+<form action="/Home/recipe" method="post">
+    <input type="submit" value="מתכונים"  id="recipe"/>
+</form>
+
+<div>חיפוש עבודה</div>
+@Html.ActionLink("אתרים שימושיים","worksite")
+<br />
+@Html.ActionLink("שאל מומחה","expert")
+<br />
+@Html.ActionLink("הצעות עבודה רלוונטיות","workssuggest")
+<br />
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <link rel="stylesheet" type="text/css" href="homecss.css" />
+</head>
+<body>
+    <div id="con">
+        <marquee id="con" direction="right" behavior="scroll" scrolldelay="10">מזל טוב ל   לרגל האירוסין מזל טוב ל   לרגל החתונה מזל טוב ל    יומולדת מזל טוב ל   לרגל חתונת הבן מזל טוב ל      לרגל אירוסי הבת     וכו'</marquee>
+    </div>
+    <div id="msgbox">
+        <marquee id="msg" direction="up" behavior="scroll" scrolldelay="500"  width="200" height="100" >
+            למרות השלג לימודים בתמורה כרגיל
+            <br />
+            ביום שלישי חדר מחשבים סגור
+            <br />
+            הרצאה מפי הרב טולדנו ביום חמישי
+        </marquee>
+
+    </div>
+
+
+      
+
+</body>
+</html>

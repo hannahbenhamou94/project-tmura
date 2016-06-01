@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "index";
+}
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="he" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="~/css/login.css" />
+</head>
+<body>
+    <div class="header">
+        <img id="header1" src="~/picture/login/header1.jpg" alt="TMURA">
+        <img id="header2" src="~/picture/login/header2.jpg" alt="TMURA">
+    </div>
+    <div class="logo">
+        <img id="logo" src="~/picture/login/logo.gif" alt="TMURA">
+
+    </div>
+    <div class="login-options">
+        <form id="tmuralogin" method="post" action="/Home/home">
+            <h2>ברוכים הבאים לבוגרת תמורה</h2>
+
+            <input type="text" name="username"  placeholder="שם משתמש">
+            <br/><br />
+            <input type="password" name="pass"  placeholder="סיסמא">
+            <br /><br />
+            <input type="submit" value="כניסה לאתר" id="submit">
+            <label> @ViewBag.result</label>
+            
+        </form>
+    </div>
+    <div class="footer">
+        <img id="footer" src="~/picture/login/footer.jpg" alt="links">
+        <img id="footer_image" src="~/picture/login/image.jpg" alt="TMURA">
+    </div>
+
+
+
+</body>
+</html>
