@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDataBaseModel1StoreContainer" CdmEntityContainer="MyDataBaseEntities1">
+    <EntitySetMapping Name="person">
+      <EntityTypeMapping TypeName="MyDataBaseModel1.person">
+        <MappingFragment StoreEntitySet="person">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="family" ColumnName="family" />
+          <ScalarProperty Name="id_" ColumnName="id " />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="worksuggests">
+      <EntityTypeMapping TypeName="MyDataBaseModel1.worksuggests">
+        <MappingFragment StoreEntitySet="worksuggests">
+          <ScalarProperty Name="fileID" ColumnName="fileID" />
+          <ScalarProperty Name="fileName" ColumnName="fileName" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="filedate" ColumnName="filedate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

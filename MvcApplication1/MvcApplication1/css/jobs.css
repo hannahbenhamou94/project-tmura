@@ -1,0 +1,98 @@
+body {
+    background-image: url("background.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header {
+    margin-bottom: 135px;
+}
+#header1 {
+    left: 0;
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    z-index: 0;
+}
+ #header2 {
+   width:48%;
+   height:15%;
+   z-index: -1;
+   margin-left: 52%;
+
+}
+
+#logo {
+    width: 50%;
+    position: absolute;
+    left: 30%;
+    top: 220px;
+    z-index: 1;
+}
+ul.menu{
+    width: 90%;
+    height: 80px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 370px;
+    display: inline-flex;
+    list-style-type: none;
+}
+ul.menu img {
+    height: 60px;
+}
+ul.menu img:hover {
+    opacity: 0.7;
+}
+
+.boxes{
+    display: block;
+    width: 90%;
+    height: 200%;
+    position: absolute;
+    top: 500px;
+    left: 5%;
+    right: 5%;
+     -webkit-columns: 2; /* Chrome, Safari, Opera */
+    -moz-columns: 2; /* Firefox */
+    columns: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px
+    
+}
+ 
+ol#search, ol#guidance, ol#companies    {
+
+    background-color:#FFFFFF;
+    font-weight: bold;
+    color: #5A595E;
+    padding: 30px;
+    box-shadow: 0px 3px 12px 3px #CCCCCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    }
+    
+ol#search {
+    height: 43%;
+}
+.boxes ol h2 {
+
+    color: #2A4F83;
+    font-family: Zapf-Chancery, cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+.boxes ol a {
+    color: maroon;
+    font-family: roman, 'times new roman', times, serif;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+   
+
+

@@ -1,0 +1,63 @@
+﻿
+@model IList<MvcApplication1.Models.worksuggests>
+@{
+
+    for (int i = Model.Count; i ==0 ; i--)
+    {
+        @Model[i].content;
+        @Model[i].fileName;
+    }
+}
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="~/css/posts.css"/>
+    </head>
+    <body>
+                 
+
+
+        <div class= "header">    
+            <img id="header1" src="~/picture/works/worksuggest/header1.png" alt="TMURA"></img>
+            <img id="header2" src="~/picture/works/worksuggest/header2.png" alt="TMURA"></img>
+            <img id="logo" src="~/picture/works/worksuggest/logo.gif" alt="TMURA"></img>
+            <img id="menu" src="~/picture/works/worksuggest/menu.gif" alt="MENU"></img>
+        </div>
+        <div class= "posts">
+            <h2>הצעות עבודה רלוונטיות</h2>
+            <div class= "inner_posts">
+                <div class= "post">
+
+                    
+                 @for (int i = Model.Count-1; i>=0 ; i--)
+                 {          
+
+                 <h6> @Model[i].content;</h6>
+                 <p> @Model[i].fileName;</p>
+
+                }
+                 
+
+                </div>
+
+
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+     <form method="post" action="/Home/workssuggest2">
+    <input type="text" id="name" name="name" placeholder="name" />
+    <input type="text" id="worksugg" name="worksugg" />
+         
+    <input type="submit" value="הוספת הצעה" id="save"/>
+        <br />
+        <br />
+
+</form>
+    </body>
+</html>

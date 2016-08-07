@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDataBaseModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MyDataBaseModel1StoreContainer">
+    <EntitySet Name="person" EntityType="MyDataBaseModel1.Store.person" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="worksuggests" EntityType="MyDataBaseModel1.Store.worksuggests" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="person">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="password" Type="char" MaxLength="10" />
+    <Property Name="name" Type="char" MaxLength="10" />
+    <Property Name="family" Type="char" MaxLength="10" />
+    <Property Name="id " Type="int" />
+    <Property Name="phone" Type="char" MaxLength="10" />
+    <Property Name="email" Type="char" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="worksuggests">
+    <Key>
+      <PropertyRef Name="fileID" />
+    </Key>
+    <Property Name="fileID" Type="int" Nullable="false" />
+    <Property Name="fileName" Type="char" Nullable="false" MaxLength="50" />
+    <Property Name="content" Type="varchar(max)" Nullable="false" />
+    <Property Name="filedate" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>

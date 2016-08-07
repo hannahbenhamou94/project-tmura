@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MyDataBaseModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="MyDataBaseModel1StoreContainer">
+          <EntitySet Name="person" EntityType="MyDataBaseModel1.Store.person" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="worksuggests" EntityType="MyDataBaseModel1.Store.worksuggests" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="person">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="password" Type="char" MaxLength="10" />
+          <Property Name="name" Type="char" MaxLength="10" />
+          <Property Name="family" Type="char" MaxLength="10" />
+          <Property Name="id " Type="int" />
+          <Property Name="phone" Type="char" MaxLength="10" />
+          <Property Name="email" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="worksuggests">
+          <Key>
+            <PropertyRef Name="fileID" />
+          </Key>
+          <Property Name="fileID" Type="int" Nullable="false" />
+          <Property Name="fileName" Type="char" Nullable="false" MaxLength="50" />
+          <Property Name="content" Type="varchar(max)" Nullable="false" />
+          <Property Name="filedate" Type="datetime" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MyDataBaseModel1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MyDataBaseEntities1" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="person" EntityType="MyDataBaseModel1.person" />
+          <EntitySet Name="worksuggests" EntityType="MyDataBaseModel1.worksuggests" />
+        </EntityContainer>
+        <EntityType Name="person">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="password" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="name" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="family" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="id_" Type="Int32" />
+          <Property Name="phone" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="worksuggests">
+          <Key>
+            <PropertyRef Name="fileID" />
+          </Key>
+          <Property Name="fileID" Type="Int32" Nullable="false" />
+          <Property Name="fileName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="content" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="filedate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MyDataBaseModel1StoreContainer" CdmEntityContainer="MyDataBaseEntities1">
+          <EntitySetMapping Name="person">
+            <EntityTypeMapping TypeName="MyDataBaseModel1.person">
+              <MappingFragment StoreEntitySet="person">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="family" ColumnName="family" />
+                <ScalarProperty Name="id_" ColumnName="id " />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="email" ColumnName="email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="worksuggests">
+            <EntityTypeMapping TypeName="MyDataBaseModel1.worksuggests">
+              <MappingFragment StoreEntitySet="worksuggests">
+                <ScalarProperty Name="fileID" ColumnName="fileID" />
+                <ScalarProperty Name="fileName" ColumnName="fileName" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="filedate" ColumnName="filedate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

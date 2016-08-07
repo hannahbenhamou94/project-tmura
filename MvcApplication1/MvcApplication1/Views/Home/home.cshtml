@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="~/css/home.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#search4job").mouseenter(function () {
+                    $("#search4job").addClass("hide");
+                    $(".search4job_links").removeClass("hide");
+                });
+                $(".search4job_links").mouseleave(function () {
+                    $(".search4job_links").addClass("hide");
+                    $("#search4job").removeClass("hide");
+                });
+            });
+
+        </script> 
+    </head>
+    <body>
+        <div class= "header">    
+            <img id="header1" src="~/picture/home/header1.png" alt="TMURA" />
+            <img id="header2" src="~/picture/home/header2.png" alt="TMURA"/>
+           <!-- <img id="header3" src="header3.png" alt="TMURA"></img>-->
+            <img id="logo" src="~/picture/home/logo.jpg" alt="TMURA"/>
+        </div>
+       <table class="center"> 
+           <tr>
+               <td>
+                 <a href="~/Home/lessons">
+                     <img id="kodesh" src="~/picture/home/kodesh.png" alt="הרצאות ושיעורי קודש"/> 
+                 </a>
+               </td>
+               <td>
+                 <a href="~/Home/test">
+                     <img id="site" src="~/picture/home/site.png" alt="אתרי תכנות שימושיים"/> 
+                 </a>
+               </td>
+               <td>
+                    <a href="~/Image/Upload">
+                        <img id="galary" src="~/picture/home/galary.png" alt="גלריה"/> 
+                    </a>
+               </td>
+           </tr>
+            <tr>
+                <td> 
+                    <a > 
+                        <img id="search4job" src="~/picture/home/search4job.png" alt="חיפוש עבודה"/> 
+                        <div class="search4job_links hide">
+                            <img id="search4job_links"  src="~/picture/home/search4job_links.png" alt="חיפוש עבודה"/> 
+                            <ul class="links">
+                                <li>
+                                    <a class="links" href="~/Home/workssuggest3">קישורים לאתרים</a> 
+                                </li>
+                                <li>
+                                    <a class="links" href="~/Home/work">הצעות עבודה רלוונטיות</a> 
+                                </li>
+                                <li>
+                                    <a class="links" href="~/Home/expert">שאל את המומחה</a>  
+                                </li>
+                            </ul>   
+                        </div>
+                    </a> 
+                    
+                </td>
+                <td>
+                    <a href="~/Home/test">
+                        <img id="notes_tests" src="~/picture/home/notes_tests.png" alt="סיכומים ומבחנים"/> 
+                    </a>
+                </td>
+            </tr>
+       </table>
+        <marquee id="updates" direction="right" behavior="scroll" scrolldelay="10"> Updates</marquee>
+        <marquee id="bless" direction="right" behavior="scroll" scrolldelay="10">מזל טוב ל   </marquee>
+        <div class="footer">
+            <img id="footer" src="~/picture/home/footer.jpg" alt="links"/>
+        </div> 
+
+    </body>
+</html>
+

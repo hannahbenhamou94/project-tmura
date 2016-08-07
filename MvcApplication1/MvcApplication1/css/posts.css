@@ -1,0 +1,93 @@
+body {
+    background-image: url("../picture/galery/background.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header {
+    margin-bottom: 135px;
+}
+#header1 {
+    left: 0;
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    z-index: 0;
+}
+ #header2 {
+   width:48%;
+   height:15%;
+   z-index: -1;
+   margin-left: 52%;
+
+}
+
+#logo {
+    width: 50%;
+    position: absolute;
+    left: 30%;
+    top: 220px;
+    z-index: 1;
+}
+#menu {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 370px;
+}
+
+.posts {
+    background-color: #2A4F83;
+    opacity: 0.6;
+    display: block;
+    width: 88%;
+    height: 200%;
+    position: absolute;
+    top: 500px;
+     left: 6%;
+    right: 6%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+}
+
+
+.posts  h2 {
+    width: 100%;
+    background-color: #011C42;
+    opacity: 1;
+    color: #FFFFFF;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 0px;
+    -webkit-top-right-border-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-top-left-border-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.inner_posts {
+    
+    width: 88%;
+    left: 5%;
+    right: 5%;
+     -webkit-columns: 50; /* Chrome, Safari, Opera */
+    -moz-columns: 50; /* Firefox */
+    columns: 50;
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+    column-gap: 10px
+}
+.post  {
+        font-weight: bold;
+    color: #5A595E;
+    padding: 30px;
+    border: #011C42 solid 1px;
+    opacity: 1;
+    width: 50%;
+    height: 33%;
+}
+
+

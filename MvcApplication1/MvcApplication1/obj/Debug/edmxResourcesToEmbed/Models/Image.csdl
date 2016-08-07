@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDataBaseModel2" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MyDataBaseEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Image" EntityType="MyDataBaseModel2.Image" />
+    <EntitySet Name="person" EntityType="MyDataBaseModel2.person" />
+    <EntitySet Name="worksuggests" EntityType="MyDataBaseModel2.worksuggests" />
+  </EntityContainer>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="ImageId" />
+    </Key>
+    <Property Name="ImageId" Type="Int32" Nullable="false" />
+    <Property Name="Imagesize" Type="Int32" Nullable="false" />
+    <Property Name="FileName" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="ImageData" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="person">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="password" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="name" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="family" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="id_" Type="Int32" />
+    <Property Name="phone" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="worksuggests">
+    <Key>
+      <PropertyRef Name="fileID" />
+    </Key>
+    <Property Name="fileID" Type="Int32" Nullable="false" />
+    <Property Name="fileName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="filedate" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+</Schema>

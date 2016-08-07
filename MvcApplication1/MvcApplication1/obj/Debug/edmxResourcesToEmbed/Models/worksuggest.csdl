@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDataBaseModel1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MyDataBaseEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="person" EntityType="MyDataBaseModel1.person" />
+    <EntitySet Name="worksuggest" EntityType="MyDataBaseModel1.worksuggest" />
+  </EntityContainer>
+  <EntityType Name="person">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="password" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="name" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="family" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="id_" Type="Int32" />
+    <Property Name="phone" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="worksuggest">
+    <Key>
+      <PropertyRef Name="fileID" />
+    </Key>
+    <Property Name="fileID" Type="Int32" Nullable="false" />
+    <Property Name="fileName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>
